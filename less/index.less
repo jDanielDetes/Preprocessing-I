@@ -4,49 +4,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+
 
 /* Set every element's box-sizing to border-box */
 * {
@@ -58,3 +16,88 @@ html, body {
 	
 }
 
+//starting here
+@main-bg-color:#d3d3d3;
+
+
+header{
+	
+	#Main-Nav {
+		display: flex;
+		flex-direction: row;
+		margin-left: auto;
+		
+	}
+}
+
+.top-content{
+	background-color: @main-bg-color;
+
+
+	img{
+		height: 40%;
+		width: 30%;
+		margin: 50px ;
+	}
+
+	h1{
+		font-size: 3em;
+		margin: 0 0 0 20px;
+	}
+	p{
+		margin: 20px 20px 0 20px;
+	}
+	.top-content button{
+		margin: 15px;
+	}
+	button{
+		border:none;
+		padding: 10px;
+		background-color: gray;
+		margin: 10px;
+		&:hover {
+			color: white;
+		}
+	}
+	
+}
+
+.Middle-content{
+	display: flex;
+	margin: 5%;
+	justify-content: space-between;
+
+
+	table{
+		
+
+	}
+	td,th{
+		border: 1px solid black;
+	}
+	.info{
+		width: 50%;
+	}
+	.talents{
+		width: 50%;
+		border: 1px solid black;
+	}
+}
+
+.Bottom-Content{
+
+	td,th{
+		border: 1px solid black;
+	}
+
+}
+
+footer{
+	background: @main-bg-color;
+	padding: 20px 0 0 0;
+	
+	p{
+		display: flex;
+		justify-content: center;
+	}
+}

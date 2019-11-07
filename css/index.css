@@ -2,130 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -133,4 +9,64 @@ table {
 html,
 body {
   height: 100%;
+}
+header #Main-Nav {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+.top-content {
+  background-color: #d3d3d3;
+}
+.top-content img {
+  height: 40%;
+  width: 30%;
+  margin: 50px ;
+}
+.top-content h1 {
+  font-size: 3em;
+  margin: 0 0 0 20px;
+}
+.top-content p {
+  margin: 20px 20px 0 20px;
+}
+.top-content .top-content button {
+  margin: 15px;
+}
+.top-content button {
+  border: none;
+  padding: 10px;
+  background-color: gray;
+  margin: 10px;
+}
+.top-content button:hover {
+  color: white;
+}
+.Middle-content {
+  display: flex;
+  margin: 5%;
+  justify-content: space-between;
+}
+.Middle-content td,
+.Middle-content th {
+  border: 1px solid black;
+}
+.Middle-content .info {
+  width: 50%;
+}
+.Middle-content .talents {
+  width: 50%;
+  border: 1px solid black;
+}
+.Bottom-Content td,
+.Bottom-Content th {
+  border: 1px solid black;
+}
+footer {
+  background: #d3d3d3;
+  padding: 20px 0 0 0;
+}
+footer p {
+  display: flex;
+  justify-content: center;
 }
